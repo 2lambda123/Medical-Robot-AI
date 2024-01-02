@@ -182,7 +182,7 @@ wcwidth==0.2.5
 webexteamssdk==1.6
 websocket-client==1.2.1
 websockets==8.1
-Werkzeug==2.0.1
+Werkzeug==2.3.8
 wincertstore==0.2
 wrapt==1.12.1
 yarl==1.6.3
