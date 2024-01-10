@@ -79,6 +79,30 @@ class FindTheCorrespondingDisease(Action):
             dispatcher.utter_message(template='utter_out1')
             try:
                 if type(disease) != list:
+                    data = Spider_open.open_s(disease[0]) if disease else ''
+                else:
+                    data = Spider_open.open_s(disease[0] if disease else '')
+                if data:
+                    data = data.split('"')[3]
+                    dispatcher.utter_message(text=data)
+            except Exception as e:
+                print(e)
+                dispatcher.utter_message(template='utter_exception')
+            dispatcher.utter_message(template='utter_out1')
+            try:
+                if type(disease) != list:
+                    data = Spider_open.open_s(disease[0]) if disease else ''
+                else:
+                    data = Spider_open.open_s(disease[0] if disease else '')
+                if data:
+                    data = data.split('"')[3]
+                    dispatcher.utter_message(text=data)
+            except Exception as e:
+                print(e)
+                dispatcher.utter_message(template='utter_exception')
+            dispatcher.utter_message(template='utter_out1')
+            try:
+                if type(disease) != list:
                     data = Spider_open.open_s(disease[0])
                 else:
                     data = Spider_open.open_s(disease)
