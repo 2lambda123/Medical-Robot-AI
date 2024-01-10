@@ -16,12 +16,23 @@ from typing import Any, Text, Dict, List
 from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
+from rasa_sdk.types import DomainDict
 from rasa_sdk.executor import CollectingDispatcher
-import logging
-import json
-from datetime import datetime
-from typing import Any, Dict, List, Text, Optional
-import requests
+from rasa_sdk.forms import FormValidationAction
+from datetime import datetime, date, timedelta
+from rasa_sdk.events import (
+    SlotSet,
+    UserUtteranceReverted,
+    ConversationPaused,
+    EventType,
+)
+import jieba
+from actions.api import question_parser
+from actions.api import answer_search
+from actions.api import Spider_open
+from actions.api import weather
+from actions.api import app
+import subprocess
 from rasa_sdk import Action, Tracker
 from rasa_sdk.types import DomainDict
 from rasa_sdk.forms import FormValidationAction
