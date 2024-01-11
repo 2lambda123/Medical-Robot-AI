@@ -1,5 +1,5 @@
 version: '2.0'
-config:
+config: \n  store_entities_as_slots: true
   store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
@@ -67,7 +67,7 @@ slots:
   disease:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
-    auto_fill: true
+    auto_fill: false
     influence_conversation: true
   check:
     type: rasa.shared.core.slots.TextSlot
@@ -77,7 +77,7 @@ slots:
   drug:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
-    auto_fill: true
+    auto_fill: false
     influence_conversation: true
   food:
     type: rasa.shared.core.slots.TextSlot
