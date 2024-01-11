@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Add necessary steps to fix the error causing the failure
+
+      - name: Run tests
+        run: |
+          # Add commands to run tests
+
+      - name: Deploy
+        run: |
+          # Add commands to deploy the application
