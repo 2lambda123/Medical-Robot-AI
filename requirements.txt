@@ -27,7 +27,7 @@ colorhash==1.0.3
 comtypes==1.1.10
 constantly==15.1.0
 croniter==1.0.15
-cryptography==42.0.0
+cryptography==42.0.2
 cssselect==1.1.0
 cycler==0.10.0
 decorator==4.4.2
