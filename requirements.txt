@@ -58,7 +58,7 @@ httpx==0.23.0
 humanfriendly==9.2
 hyperframe==5.2.0
 hyperlink==21.0.0
-idna==2.10
+idna==3.7
 importlib-metadata==4.8.1
 incremental==21.3.0
 isodate==0.6.0
